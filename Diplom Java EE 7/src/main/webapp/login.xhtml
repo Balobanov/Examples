@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+<h:outputStylesheet  name="css/style.css"></h:outputStylesheet>
+<title>Login</title>
+</h:head>
+<h:body> 
+    <div id="header">
+    	<h:graphicImage library="css" name="logo.jpg"></h:graphicImage>
+    	<p id="theme"> 
+			Intelligent method for assessing the state of human health. General physical condition.
+		</p>
+    </div>
+    
+<h:messages></h:messages>
+
+<div id="auth">
+        <h2>Hello, please log in:</h2>
+        <form name="loginForm" method="POST" action="j_security_check">
+        
+        <div id="loginField"> 
+        
+            <p><strong>Please type your user name: </strong>
+                <input id="login" type="text" name="j_username" size="20"> </input>  </p>
+                
+            <p><strong>Please type your password: </strong>
+                <input id="pass" type="password" size="20" name="j_password"> </input> </p>
+        </div>
+            <p>
+            	<input id="submit" type="submit" value="Submit"/>
+                <input id="reset" type="reset" value="Reset"/>
+                <h:button id="register" outcome="registration" value="Registration"></h:button> </p>
+              
+        </form> 
+</div>    
+</h:body>
+
+</html>

@@ -1,0 +1,92 @@
+body
+{
+	background: url(#{request.contextPath}/resources/css/background1.jpg) no-repeat center center fixed;
+	backgroubd-size: cover;
+}
+
+#header
+{
+	height: 150px;
+}
+
+#header p#theme
+{
+	position: absolute;
+	left: 200px;
+	top: 25px;
+	width: 1000px;
+	font-size: 20pt;
+}
+
+#header img#logo
+{
+	clear: right;
+}
+
+#auth
+{
+	border: 4px double black;
+	position: absolute;
+	width: 40%;
+	height: 30%;
+	left: 50%;
+	top: 50%;
+	margin-left: -20%;
+	margin-top: -5%;
+	background: #5cff76;
+	text-align: center;
+}
+
+#auth #login, #pass
+{
+	border: 4px double black;
+}
+
+#auth #submit, #reset, #register
+{
+	border: 4px double black;
+	width: 150px;
+}
+
+#table
+{
+	display: table;
+	border-spaceng: 10px;
+	width: 1000px;
+}
+
+#tableRow
+{
+	display: table-row;
+}
+
+#mainContent
+{
+	width: 1000px;
+	background: #5cffdd;
+	position: absolute;
+	margin-left: -500px;
+	left: 50%;
+}
+
+#messages
+{
+	display: table-cell;
+	border: 4px double black;
+	background: #5cff76;
+	text-align: center;
+	padding: 10px;
+	width: 300px;
+	vertical-align: top;
+}
+
+#grade
+{
+	display: table-cell;
+	border: 4px double black;
+	background: #5cff76;
+	text-align: left;
+	padding: 10px;
+	width: 300px;
+	vertical-align: top;
+}

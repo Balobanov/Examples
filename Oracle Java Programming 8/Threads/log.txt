@@ -1,0 +1,18 @@
+D:\Tomcat\RUNNING.txt
+D:\LB_SUTS_2013\LB_1\ip-list [301A].txt
+D:\D-ITG\script.txt
+D:\.opera\icons\persistent.txt
+D:\.config\chromium\chrome_shutdown_ms.txt
+D:\NetworkManager-0.9.0\docs\libnm-glib\libnm-glib-overrides.txt
+D:\Tomcat\webapps\docs\BUILDING.txt
+D:\NetworkManager-0.9.0\docs\libnm-util\libnm-util-sections.txt
+D:\NetworkManager-0.9.0\docs\api\NetworkManager-overrides.txt
+D:\Tomcat\webapps\ROOT\RELEASE-NOTES.txt
+D:\Tomcat\webapps\docs\appdev\build.xml.txt
+D:\JavaPz1\wdawd\log.txt
+D:\.local\share\Trash\files\new.txt
+D:\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!PASCAL\OTMP_lab\New Text Document (2).txt
+D:\Desktop\student\Desktop\student\Desktop\student\Desktop\student\Desktop\student\Desktop\student\Desktop\student\Desktop\student\Desktop\student\Desktop\student\Desktop\student\NetworkManager-0.9.0\docs\api\NetworkManager-overrides.txt
+D:\!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!PASCAL\OTMP_lab\Attachments_k_alex_vic@mail.ru_2015-04-15_16-46-43\TÆ¦-¦¦TÂ¦-.txt
+D:\Tomcat\webapps\docs\architecture\startup\serverStartup.txt
+D:\Desktop\student\PRAKTIKAAAAAAAAAAAAAAA\desfhdsgf.txt

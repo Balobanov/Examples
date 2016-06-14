@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+      
+    <h:head>
+     <h:outputStylesheet  name="css/style.css"></h:outputStylesheet> 
+        <title>Grade</title>
+    </h:head>
+    <h:body>
+    
+    <div id="header">
+    	<h:graphicImage library="css" name="logo.jpg"></h:graphicImage>
+    	<p id="theme"> 
+			Intelligent method for assessing the state of human health. General physical condition.
+		</p>
+    </div>
+    
+    <div id="mainContent">
+		<div id="table">
+		<div id="tableRow">
+		
+    <div id="grade">
+    <h:form id="from1">
+    
+    	<center>
+	  	 <h:outputLabel value="Hello"></h:outputLabel>
+	   	</center>
+	   	
+	   	<center>
+	   <p>
+	   <h:outputLabel value="#{userController.user.user_name}"></h:outputLabel> &nbsp;
+	   <h:outputLabel value="#{userController.user.user_lastname}"></h:outputLabel>
+	   </p>
+	   </center>
+	   
+	   <div style="margin-bottom: 10px;">
+	   		<h:outputLabel value="Diastolic:" style="display: inline-block; width: 90px;"></h:outputLabel>
+	   		<h:inputText id="dys" value="#{userController.cs.diastolic}" size="20"></h:inputText>
+	   </div>
+	   
+	    <div style="margin-bottom: 10px;">
+	   		<h:outputLabel value="Systolic:" style="display: inline-block; width: 90px;"></h:outputLabel> 
+	   		<h:inputText id="sys" value="#{userController.cs.systolic}" size="20"></h:inputText>
+	   </div>
+	   
+	   
+	    <div style="margin-bottom: 10px;">
+	  		<h:outputLabel value="Pulse:" style="display: inline-block; width: 90px;"></h:outputLabel> 
+	   		<h:inputText id="pulse" value="#{userController.cs.pulse}" size="20"></h:inputText>
+	   </div>
+	   
+	    <div style="margin-bottom: 10px;">
+	  		 <h:outputLabel value="Temperature:" style="display: inline-block; width: 90px;"></h:outputLabel>
+	  		 <h:inputText id="temp" value="#{userController.cs.temperature}"></h:inputText>
+	   </div>
+	   
+	    <div style="margin-bottom: 10px;">
+	   		<h:outputLabel value="Saturation:" style="display: inline-block; width: 90px;"></h:outputLabel>
+	   		<h:inputText id="satur" value="#{userController.satur.oxygen}"></h:inputText>
+	   </div>
+	   
+	    <div style="margin-bottom: 10px;">
+	   		<h:outputLabel value="Sugar:" style="display: inline-block; width: 90px;"></h:outputLabel>
+	   		<h:inputText id="sugar" value="#{userController.diabet.sugar}"></h:inputText>
+	   </div>
+	   
+	   <div>
+	   <h:commandButton value="Calculate" actionListener="#{userController.calculateGrade}" style="margin-right: 10px">
+	   	<f:ajax execute="dys sys pulse temp satur sugar" render="grade errors"></f:ajax>
+	   </h:commandButton>
+	   
+	   <h:commandButton value="Logout" action="#{logoutController.logout}"></h:commandButton>
+		</div>
+	   
+	    <!--  <h:outputLabel  value="Grade is..."></h:outputLabel>
+		<h:outputLabel id="grade" value="#{userController.user.grade}"></h:outputLabel>
+		-->
+    </h:form>
+    </div>
+    
+    <div id="messages">
+    	<p>Grade</p>
+    	<h:messages id="errors"></h:messages>
+    </div>
+    
+    </div>
+	</div>
+	</div>
+	
+    </h:body>
+</html>
