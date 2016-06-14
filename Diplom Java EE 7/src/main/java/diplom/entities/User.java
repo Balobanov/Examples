@@ -27,11 +27,11 @@ public class User {
 	private String user_lastname;
 	
 	@NotNull
-	@Size(min = 2, max = 64, message = "Login must be between {min} and {max} size")
+	@Size(min = 4, max = 64, message = "Login must be between {min} and {max} size")
 	private String login;
 	
 	@NotNull
-	@Size(min = 2, max = 64, message = "Password must be between {min} and {max} size")
+	@Size(min = 8, max = 64, message = "Password must be between {min} and {max} size")
 	private String user_password;
 	
 	private float grade;
