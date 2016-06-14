@@ -33,10 +33,10 @@ public class Main {
 //			
 //			UserEjb uEjb = (UserEjb) ctx.lookup("java:global/classes/UserEjb!diplom.ejbs.UserEjb");
 //			
-//			Address adr = new Address("wadawd");
+//			Address adr = new Address("Pervom");
 //			Groups grp = new Groups(2, "Patient");
 //			
-//			User user = new User("name", "wdaw", "log", "pass", adr, grp);  
+//			User user = new User("name", "lname", "log", "pass", adr, grp);  
 //			
 //			uEjb.insertOrUpdate(user);
 //			
